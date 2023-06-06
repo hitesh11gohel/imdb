@@ -4,7 +4,7 @@ import SliderComp from "../components/Overlay";
 import TVSeries from "../components/TvSeries";
 import NowPlaying from "../components/BoxOffice";
 import Header from "../components/Header";
-import { ImdbContext } from "./ImdbContext";
+import { ImdbContext } from "../components/ImdbContext";
 import { Spinner } from "../components/Loader";
 
 const IndexPage = () => {

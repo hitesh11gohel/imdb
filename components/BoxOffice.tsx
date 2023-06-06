@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { ImdbContext } from "../pages/ImdbContext";
+import { ImdbContext } from "./ImdbContext";
 import { SkeletonComp } from "./Loader";
 
 const CardComp = ({ item }) => {

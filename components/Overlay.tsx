@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { ImdbContext } from "../pages/ImdbContext";
+import { ImdbContext } from "./ImdbContext";
 // import { ImdbContext } from "../../pages/ImdbContext";
 import { SliderSkeleton } from "./Loader";
 

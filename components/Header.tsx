@@ -2,7 +2,7 @@ import React, { useContext, useMemo, useState } from "react";
 import Link from "next/link";
 import { debounce } from "lodash";
 import { useQuery } from "react-query";
-import { ImdbContext } from "../pages/ImdbContext";
+import { ImdbContext } from "./ImdbContext";
 import { SearchMovie } from "../services";
 import { HeaderPropType } from "../types";
 
