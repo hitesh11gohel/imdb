@@ -81,7 +81,7 @@ const TabsComp = () => {
 const CardComp = ({ item }) => {
   return (
     <div className="w-full sm:w-1/2 md:w-1/5 lg:w-1/5 m-3 lg:mt-5 lg:mx-6 max-w-sm border border-gray-800 shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
+      <a href={`https://www.imdb.com/title/${item.id}`} target="blank">
         <img
           className="brightness-100 rounded-t-lg h-44 w-full md:w-72 object-cover"
           src={

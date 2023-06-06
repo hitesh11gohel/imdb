@@ -5,7 +5,7 @@ import { SkeletonComp } from "./Loader";
 const CardComp = ({ item }) => {
   return (
     <div className="lg:w-72 md:w-full m-3 max-w-sm border border-gray-800 shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
+      <a href={`https://www.imdb.com/title/${item.id}`} target="blank">
         <img
           className="brightness-100 rounded-t-lg h-44 w-full object-cover"
           src={item["i"]?.imageUrl}

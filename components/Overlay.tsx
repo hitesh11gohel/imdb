@@ -20,7 +20,7 @@ const Overlay = () => {
           alt={sliderData["l"]}
         />
       </a>
-      <figcaption className="absolute top-10 right-0 md:right-24 md:top-20 w-full md:w-96">
+      <figcaption className="px-6 absolute top-10 right-0 md:right-24 md:top-15 w-full md:w-96">
         <h5 className="text-2xl font-bold my-3">{sliderData["l"]}</h5>
         <p className="text-md">TV-MA Action, Advanture, Drama 9.1/10</p>
         <p className="text-xs md:text-sm text-gray-300 my-3">
@@ -29,13 +29,14 @@ const Overlay = () => {
           using Lorem Ipsum is that it has a more-or-less normal distribution of
           letters, as opposed to using 'Content here, content here', making it
           look like readable English.
-        </p>                               
-        <button
-          type="button"
+        </p>
+        <a
+          href={`https://www.imdb.com/title/${sliderData["id"]}`}
+          target="blank"
           className="bg-[#00C2EE] rounded-full text-sm px-5 py-2.5 text-center mr-2 my-3 dark:bg-[#00C2EE]"
         >
           Learn More
-        </button>
+        </a>
       </figcaption>
     </figure>
   ) : (
