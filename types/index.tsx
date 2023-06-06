@@ -3,11 +3,7 @@ export interface ImdbResponse {
 }
 
 export interface ImdbType {
-  i: {
-    height: Number;
-    imageUrl: string;
-    width: Number;
-  };
+  i: Array<String>
   id: string;
   l: string;
   q: string;
