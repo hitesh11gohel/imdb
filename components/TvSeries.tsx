@@ -85,7 +85,8 @@ const CardComp = ({ item }) => {
         <img
           className="brightness-100 rounded-t-lg h-44 w-full md:w-72 object-cover"
           src={
-            (item["i"] && item["i"][0]) ||
+            // (item["i"] && item["i"][0]) ||
+            (item["i"] && item["i"].imageUrl) ||
             "https://cdni.iconscout.com/illustration/premium/thumb/page-not-found-3936853-3277293.png"
           }
           alt={item["l"]}

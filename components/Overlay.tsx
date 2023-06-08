@@ -17,7 +17,8 @@ const Overlay = () => {
         <img
           className="brightness-50 rounded-lg h-96 w-full object-cover"
           src={
-            (sliderData && sliderData["i"] && sliderData["i"][0]) ||
+            // (sliderData && sliderData["i"] && sliderData["i"][0]) ||
+            (sliderData && sliderData["i"] && sliderData["i"].imageUrl) ||
             "https://cdni.iconscout.com/illustration/premium/thumb/page-not-found-3936853-3277293.png"
           }
           alt={sliderData["l"]}
