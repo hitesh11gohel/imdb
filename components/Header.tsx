@@ -5,7 +5,6 @@ import { useQuery } from "react-query";
 import { ImdbContext } from "./ImdbContext";
 import { SearchMovie } from "../services";
 import { HeaderPropType } from "../types";
-import UserProfile from "./test/UserProfile";
 
 function Header({ handleResponse }: HeaderPropType) {
   const [search, setSearch] = useState("");
