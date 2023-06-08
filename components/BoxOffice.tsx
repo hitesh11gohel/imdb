@@ -10,7 +10,7 @@ const CardComp = ({ item }) => {
           className="brightness-100 rounded-t-lg h-44 w-full object-cover"
           src={
             (item["i"] && item["i"][0]) ||
-            "https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
+            "https://cdni.iconscout.com/illustration/premium/thumb/page-not-found-3936853-3277293.png"
           }
           alt={item["l"]}
         />
@@ -34,7 +34,7 @@ const BoxOffice = () => {
   const [list, setList] = useState([]);
 
   useEffect(() => {
-    setList(ContextData.data.slice(0, 3));
+    setList(ContextData.data);
   }, [ContextData.data]);
 
   return (
@@ -42,7 +42,7 @@ const BoxOffice = () => {
       <h5 className="border-b border-slate-800 mx-3">
         Now Playing (Box Office)
       </h5>
-      <div className="block xl:block md:flex">
+      <div className="block xl:block max-h-[calc(100vh-125px)] overflow-x-auto overflow-y-auto overflow-x-auto md:grid grid-rows-2 grid-flow-col gap-2">
         {!ContextData.loading
           ? list.map((ele, i) => <CardComp key={i} item={ele} />)
           : [1, 2, 3].map((_ele, i) => <SkeletonComp key={i} />)}

@@ -13,7 +13,7 @@ const IndexPage = () => {
 
   const handleResponse = (newValues) => setData(newValues.d);
   return (
-    <ImdbContext.Provider value={{ data, setData, loading, setLoading }}>
+    <ImdbContext.Provider value={{ data, loading, setLoading }}>
       <Layout title="Dashboard">
         <Header handleResponse={handleResponse} />
         {data && data.length > 0 ? (

@@ -86,7 +86,7 @@ const CardComp = ({ item }) => {
           className="brightness-100 rounded-t-lg h-44 w-full md:w-72 object-cover"
           src={
             (item["i"] && item["i"][0]) ||
-            "https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg"
+            "https://cdni.iconscout.com/illustration/premium/thumb/page-not-found-3936853-3277293.png"
           }
           alt={item["l"]}
         />
